@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Task Manager</title>
+    <style>
+        input {
+            display: inline !important;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 4em;">
+    <form method="POST">
+        <input name="title" placeholder="Title" />
+        <input name="description" placeholder="Description" />
+        <input type="submit" value="Create" />
+    </form>
+    <hr />
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created At</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.title }}</td>
+            <td>{{ task.description }}</td>
+            <td>{{ task.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

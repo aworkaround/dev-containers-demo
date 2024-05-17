@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dev-containers"
+version = "0.1.0"
+description = ""
+authors = ["Kamal Kumar <kamal.devops@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "dev_containers"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+flask-sqlalchemy = "^3.1.1"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
