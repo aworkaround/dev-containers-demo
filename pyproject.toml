@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "dev-containers"
 version = "0.1.0"
-description = ""
-authors = ["Kamal Kumar <kamal.devops@outlook.com>"]
+description = "Demo Flask Todo App"
+authors = ["Kamal Kumar"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "dev_containers"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
